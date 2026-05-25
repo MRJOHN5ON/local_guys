@@ -1,0 +1,11 @@
+.DS_Store
+*.log
+
+# Not part of the public site
+EMAIL-OUTREACH.md
+README.md
+proposal.html
+scripts/
+data/
+assets/issues/
+css/revamp-case-study.css
