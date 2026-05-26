@@ -9,8 +9,8 @@
 }
 
 @keyframes hero-kenburns {
-  from { transform: scale(1.05); }
-  to { transform: scale(1.12) translate(-1%, -0.5%); }
+  from { transform: scale(1.04); }
+  to { transform: scale(1.08); }
 }
 
 .hero__overlay-grid {
@@ -27,14 +27,12 @@
 
 .hero__overlay-glow {
   position: absolute;
-  width: 60vw;
-  height: 60vw;
-  max-width: 520px;
-  max-height: 520px;
+  width: min(50vw, 420px);
+  height: min(50vw, 420px);
   border-radius: 50%;
   background: radial-gradient(circle, rgba(188, 49, 206, 0.35) 0%, transparent 70%);
   top: 10%;
-  right: -10%;
+  right: 0;
   z-index: 1;
   animation: glow-pulse 6s ease-in-out infinite;
   pointer-events: none;
@@ -83,8 +81,8 @@
 .section-divider::before {
   content: '';
   position: absolute;
-  left: -10%;
-  right: -10%;
+  left: 0;
+  right: 0;
   height: 100%;
   background: linear-gradient(135deg, var(--purple-bright) 0%, var(--purple-dark) 100%);
   transform: skewY(-2deg);
@@ -170,7 +168,7 @@
 }
 
 .brand-watermark--right {
-  right: -4%;
+  right: 0;
   top: 20%;
 }
 
@@ -245,6 +243,7 @@
   clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
   padding-top: 5rem;
   padding-bottom: 5rem;
+  overflow: hidden;
 }
 
 @media (prefers-reduced-motion: reduce) {
