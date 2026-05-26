@@ -229,12 +229,20 @@ a:hover { color: var(--purple-dark); }
   max-width: 42rem;
 }
 .hero .eyebrow {
+  display: inline-block;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  font-size: 0.7rem;
   font-weight: 700;
-  opacity: 0.9;
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.85rem;
+  padding: 0.4rem 0.75rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
 }
 .hero h1 {
   font-size: clamp(1.85rem, 5vw, 2.85rem);
